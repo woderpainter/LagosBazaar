@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Theme Colors",
+    "settings": [
+      {
+        "type": "text",
+        "id": "color_primary",
+        "label": "Primary Color (RGB)",
+        "default": "0 135 81",
+        "info": "Format: R G B (e.g. 0 135 81)"
+      },
+      {
+        "type": "text",
+        "id": "color_primary_dark",
+        "label": "Primary Dark Color (RGB)",
+        "default": "0 102 61",
+        "info": "Format: R G B"
+      },
+      {
+        "type": "text",
+        "id": "color_accent",
+        "label": "Accent Color (RGB)",
+        "default": "251 191 36",
+        "info": "Format: R G B"
+      },
+      {
+        "type": "text",
+        "id": "color_background",
+        "label": "Background Color (RGB)",
+        "default": "248 250 252",
+        "info": "Format: R G B"
+      },
+      {
+        "type": "text",
+        "id": "color_surface",
+        "label": "Surface Color (RGB)",
+        "default": "255 255 255",
+        "info": "Format: R G B"
+      },
+      {
+        "type": "text",
+        "id": "color_text",
+        "label": "Text Color (RGB)",
+        "default": "45 45 45",
+        "info": "Format: R G B"
+      },
+      {
+        "type": "text",
+        "id": "color_text_subdued",
+        "label": "Subdued Text Color (RGB)",
+        "default": "107 114 128",
+        "info": "Format: R G B"
+      },
+      {
+        "type": "text",
+        "id": "color_border",
+        "label": "Border Color (RGB)",
+        "default": "229 231 235",
+        "info": "Format: R G B"
+      }
+    ]
+  }
+]
