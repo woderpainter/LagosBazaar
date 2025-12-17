@@ -6,31 +6,27 @@
     <title>LagosBazaar | Naija's No.1 Online Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            },
-            colors: {
-              naija: {
-                green: '#008751', // Main header green
-                dark: '#00663d',  // Category bar darker green
-                white: '#FFFFFF',
-                black: '#2D2D2D',
-                accent: '#FBBF24', // Yellow/Gold for Search & Cart
-                pink: '#ED017F', // Keeping just in case, but using Green for brand consistency
-              }
-            }
-          }
-        }
-      }
-    </script>
     <style>
-      body {
-        background-color: #f8fafc;
+      /* 
+         Shopify Theme Settings Simulation 
+         These variables mimic the output of a settings_data.json configuration.
+      */
+      :root {
+        --color-primary: 0 135 81;       /* #008751 */
+        --color-primary-dark: 0 102 61;  /* #00663d */
+        --color-accent: 251 191 36;      /* #FBBF24 */
+        --color-background: 248 250 252; /* #f8fafc */
+        --color-surface: 255 255 255;    /* #ffffff */
+        --color-text: 45 45 45;          /* #2D2D2D */
+        --color-text-subdued: 107 114 128; /* #6b7280 */
+        --color-border: 229 231 235;     /* #e5e7eb */
       }
+
+      body {
+        background-color: rgb(var(--color-background));
+        color: rgb(var(--color-text));
+      }
+
       /* Custom scrollbar for better aesthetics */
       ::-webkit-scrollbar {
         width: 8px;
@@ -39,13 +35,37 @@
         background: #f1f1f1;
       }
       ::-webkit-scrollbar-thumb {
-        background: #008751;
+        background: rgb(var(--color-primary));
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #00663d;
+        background: rgb(var(--color-primary-dark));
       }
     </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            colors: {
+              // Semantic Theme Colors
+              primary: 'rgb(var(--color-primary) / <alpha-value>)',
+              'primary-dark': 'rgb(var(--color-primary-dark) / <alpha-value>)',
+              accent: 'rgb(var(--color-accent) / <alpha-value>)',
+              background: 'rgb(var(--color-background) / <alpha-value>)',
+              surface: 'rgb(var(--color-surface) / <alpha-value>)',
+              text: {
+                DEFAULT: 'rgb(var(--color-text) / <alpha-value>)',
+                subdued: 'rgb(var(--color-text-subdued) / <alpha-value>)',
+              },
+              border: 'rgb(var(--color-border) / <alpha-value>)',
+            }
+          }
+        }
+      }
+    </script>
   <script type="importmap">
 {
   "imports": {
